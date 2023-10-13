@@ -1,0 +1,16 @@
+<?php
+/**
+* SOAP Header Username Token class for inetws
+* @author Gabriel Paz <gabriel.paz@infor.net>
+* @copyright 2016 Gabriel Paz
+* @version 3.0
+* @throws SoapFault*
+*/
+class SoapHeaderUsernameToken{
+/** @var int Username */ public $Username;
+/** @var int Password */
+public $Password;
+public function __construct($l, $p){ $this->Password = $p;
+$this->Username = $l; }
+}
+?>
